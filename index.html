@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For Chik ♡</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="hearts" aria-hidden="true"></div>
+
+  <div id="loader" class="screen">
+    <div class="loader-card">
+      <div class="envelope">💌</div>
+      <p class="eyebrow">A little something for you...</p>
+      <h1>For my Chik ♡</h1>
+      <div class="progress"><span id="bar"></span></div>
+      <p id="loadingText">collecting courage...</p>
+      <button id="openBtn" class="primary" hidden>Open it ♡</button>
+    </div>
+  </div>
+
+  <main id="site" hidden>
+    <nav>
+      <button data-go="start">♡ For Chik</button>
+      <div>
+        <button data-go="story">Our story</button>
+        <button data-go="things">Things</button>
+        <button data-go="confession">The confession</button>
+      </div>
+    </nav>
+
+    <section id="start" class="hero">
+      <div class="glow"></div>
+      <p class="eyebrow">A tiny corner of the internet, made for</p>
+      <h1>Amariah Francesca</h1>
+      <p class="nickname">but Chik is fine ♡</p>
+      <p class="sub">I had something I wanted to say, so I figured I'd make an entire website instead.</p>
+      <button class="primary" data-go="story">Start reading ↓</button>
+    </section>
+
+    <section id="story" class="section">
+      <div class="paper">
+        <span class="stamp">A LETTER FOR YOU</span>
+        <h2>How it all started</h2>
+
+        <p>
+          When I transferred in senior high, I wasn't really expecting to meet someone I'd eventually become this comfortable with.
+        </p>
+
+        <p>
+          Then somehow, we started becoming friends. Somewhere between the conversations, the random moments, and you just being... you, I started realizing that I genuinely liked having you around.
+        </p>
+
+        <button class="ghost" data-reveal="storyMore">
+          There's more ↓
+        </button>
+
+        <p id="storyMore" class="reveal">
+          We don't have a hundred memories yet, and honestly, that's okay. I think that's what makes this feel kind of exciting — there's still so much left to discover.
+        </p>
+      </div>
+    </section>
+
+    <section id="things" class="section dark">
+      <p class="eyebrow">okay, some things i like about you</p>
+
+      <h2>Little things about you</h2>
+
+      <div class="cards">
+
+        <button
+          class="card"
+          data-pop="You're just really fun to talk to. Even when we're talking about the most random stuff, I still end up enjoying it."
+        >
+          <span>01</span>
+          <b>♡ Your goofiness</b>
+          <small>tap me</small>
+        </button>
+
+        <button
+          class="card"
+          data-pop="You have this funny way of being smart without making a big deal out of it. Like... how do you even do that HAHAHA."
+        >
+          <span>02</span>
+          <b>✦ That smart-but-lazy thing</b>
+          <small>tap me</small>
+        </button>
+
+        <button
+          class="card"
+          data-pop="And yeah, I think you're cute. I'm not gonna write a whole website and then pretend I forgot to mention that."
+        >
+          <span>03</span>
+          <b>♡ You're cute, okay?</b>
+          <small>tap me</small>
+        </button>
+
+      </div>
+
+      <div id="pop" class="popup" hidden></div>
+    </section>
+
+    <section id="confession" class="section confession">
+
+      <p class="eyebrow">Okay... enough stalling.</p>
+
+      <h2>So, Chik...</h2>
+
+      <p class="big">
+        I genuinely like you.
+      </p>
+
+      <p>
+        Not because I expect you to suddenly give me an answer or because I want to put you on the spot. I just wanted to be honest.
+      </p>
+
+      <p>
+        Somewhere along the way, you became someone I really enjoy knowing, and I'd like to know you even more.
+      </p>
+
+      <div class="choices">
+
+        <p>
+          No pressure. Seriously. You don't owe me a certain answer.
+        </p>
+
+        <button class="choice yes" id="yesBtn">
+          ♡ I'd like to know you more
+        </button>
+
+        <button class="choice time" id="timeBtn">
+          ♡ I need some time
+        </button>
+
+      </div>
+
+      <div id="response" class="response" hidden></div>
+
+    </section>
+
+    <footer>
+      made with too much courage & a little bit of code ♡
+    </footer>
+
+  </main>
+
+  <button
+    id="music"
+    class="music"
+    aria-label="Toggle ambient music"
+  >
+    ♫ <span>music</span>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
